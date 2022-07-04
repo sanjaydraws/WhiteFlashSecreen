@@ -5,17 +5,17 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="#ffffff"
 
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-<!--        <SeekBar-->
-<!--            android:id="@+id/seekBar"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_marginHorizontal="30dp"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            android:layout_height="wrap_content" />-->
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageBackground"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:src="@drawable/white_background"/>
         <ImageView
             android:id="@+id/powerOff"
             android:layout_width="wrap_content"
@@ -27,6 +27,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="255"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
